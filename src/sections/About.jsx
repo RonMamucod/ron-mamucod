@@ -1,35 +1,35 @@
 import React from 'react'
-import { HeartHandshake, GroupIcon, ClipboardCheck, MessageCircle } from "lucide-react";
+import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 
 const highlights = [
   {
-    icon: HeartHandshake,
-    title: "Compassionate Care",
+    icon: Code2,
+    title: "Clean Code",
     description:
-      "Providing empathetic and patient-centered care in all interactions.",
+      "Writing maintainable, scalable code that stands the test of time.",
   },
   {
-    icon: GroupIcon,
-    title: "Teamwork",
+    icon: Rocket,
+    title: "Performance",
     description:
-      "Collaboration and shared responsibility to achieve the best outcomes for patients.",
+      "Optimizing for speed and delivering lightning-fast user experiences.",
   },
   {
-    icon: MessageCircle,
-    title: "Communication",
-    description: "Clear and respectful interaction with patients, families, and colleagues.",
+    icon: Users,
+    title: "Collaboration",
+    description: "Working closely with teams to bring ideas to life.",
   },
   {
-    icon: ClipboardCheck,
-    title: "Discipline",
+    icon: Lightbulb,
+    title: "Innovation",
     description:
-      "Focus, responsibility, and perseverance in delivering high-quality nursing care.",
+      "Staying ahead with the latest technologies and best practices.",
   },
 ];
 
 const About = () => {
   return (
-    <section id='about' className='py-12 md:py-24 relative overflow-hidden'>
+    <section id='about' className='py-32 relative overflow-hidden'>
         <div className='container mx-auto px-6 relative z-10'>
           <div className='grid lg:grid-cols-2 gap-16 items-center'>
             {/* Left Column */}
@@ -38,25 +38,28 @@ const About = () => {
                 <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase'>About Me</span>
               </div>
 
-              <h2 className='text-4xl md:text-5xl font-bold
-           mt-4 mb-6 animate-fade-in animation-delay-100
-            text-secondary-foreground'>
-            Dedicated to <span className='font-serif italic font-normal text-primary'>
-               Caring for Others
-            </span>
-          </h2>
+              <h2 className='text-4xl md:text-5xl font-black leading-tight animate-fade-in animation-delay-100 text-secondary-foreground'>
+                Where creativity meets code,
+                <span className='font-serif italic font-normal text-white'> 
+                  {' '}crafting experiences that click.
+                </span>
+              </h2>
 
               <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                 <p>
-                  I am Aleizza Grace Naigan Pablo, a Registered Nurse from the Philippines and a graduate of Pangasinan State University – Bayambang Campus. After passing the November 2025 Philippine Nurse Licensure Examination (PNLE), I began my professional nursing journey as a Staff Nurse at Gilberto O. Teodoro Memorial Hospital, a government hospital in Camiling, Tarlac.</p>
+                  I’m a passionate web developer and SEO expert with experience in UI/UX design, website development, and search engine optimization. I’m proficient in WordPress, with a strong focus on building and optimizing websites that are both visually appealing and functional.</p>
                 <p>
-                 During my academic years, I served as Class President and Secretary, experiences that strengthened my leadership, communication, and organizational skills. I also participated in badminton competitions, which helped develop my discipline, focus, and perseverance.</p>
+                 I specialize in creating clean, responsive, and user-friendly WordPress websites, from engaging landing pages to fully functional business and e-commerce sites. With my background in UI/UX design, I aim to deliver websites that provide a great user experience while applying SEO best practices to improve search visibility, website performance, and online presence.</p>
                 <p>
-                  As a nursing professional, I strive to provide safe, respectful, and compassionate care while continuing to learn and grow in the healthcare field.
+                  When I’m not coding, I’m exploring new technologies, improving my SEO skills, and working on projects that challenge my creativity and help me grow as a developer.
                 </p>
               </div>
 
-             
+              <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+                <p className="text-lg font-medium italic text-foreground">
+                  "My mission is to create web experiences that go beyond functionality—where clean code meets intuitive design and every interaction feels seamless."
+                </p>
+              </div>
             </div>
 
             {/* Right Column - Highlights */}

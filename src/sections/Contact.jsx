@@ -14,14 +14,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "aleizzapablo@gmail.com",
-    href: "mailto:aleizzapablo@gmail.com",
+    value: "mamucodron@gmail.com",
+    href: "mailto:mamucodron@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+63 950 613 3824",
-    href: "tel:+639506133824",
+    value: "+63 961 786 7924",
+    href: "tel:09617867924",
   },
   {
     icon: MapPin,
@@ -87,7 +87,7 @@ export const Contact = () => {
     }
   };
   return (
-    <section id="contact" className="py-12 md:py-24 relative overflow-hidden">
+    <section id="contact" className="py-32 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -97,18 +97,17 @@ export const Contact = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Contact Me
+            Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Let's {" "}
-            <span className="font-serif italic font-normal text-primary">
-              Connect.
+            Let's build{" "}
+            <span className="font-serif italic font-normal text-white">
+              something great.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            I welcome opportunities to grow as a nursing professional, connect with healthcare practitioners, and contribute to quality patient care.
-
-            For professional inquiries, nursing opportunities, or collaboration, feel free to get in touch.
+            Have a project in mind? I'd love to hear about it. Send me a message
+            and let's discuss how we can work together.
           </p>
         </div>
 
@@ -131,7 +130,7 @@ export const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-white rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                 />
               </div>
 
@@ -150,7 +149,7 @@ export const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-white rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                 />
               </div>
 
@@ -169,7 +168,7 @@ export const Contact = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder="Your message..."
-                  className="w-full px-4 py-3 bg-white rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
                 />
               </div>
 
@@ -192,10 +191,11 @@ export const Contact = () => {
               {submitStatus.type && (
                 <div
                   className={`flex items-center gap-3
-                     p-4 rounded-xl ${submitStatus.type === "success"
-                      ? "bg-green-500/10 border border-green-500/20 text-green-400"
-                      : "bg-red-500/10 border border-red-500/20 text-red-400"
-                    }`}
+                     p-4 rounded-xl ${
+                       submitStatus.type === "success"
+                         ? "bg-green-500/10 border border-green-500/20 text-green-400"
+                         : "bg-red-500/10 border border-red-500/20 text-red-400"
+                     }`}
                 >
                   {submitStatus.type === "success" ? (
                     <CheckCircle className="w-5 h-5 flex-shrink-0" />
@@ -219,7 +219,7 @@ export const Contact = () => {
                   <a
                     key={i}
                     href={item.href}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-white transition-colors group"
+                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <item.icon className="w-5 h-5 text-primary" />
@@ -238,11 +238,11 @@ export const Contact = () => {
             {/* Availability Card */}
             <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse" />
-                <span className="font-medium">Currently Employed</span>
+                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I’m currently employed but always open to connecting with professionals and exploring future opportunities. Feel free to reach out for collaborations, freelance projects, or exciting ideas!
+                I’m currently open to new opportunities and exciting web projects. Whether you need a full-time developer or a freelance consultant, let’s connect!
               </p>
             </div>
           </div>

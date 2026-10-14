@@ -2,29 +2,46 @@ import React from 'react'
 const experiences = [
   {
     period: "August 2026 — Present",
-    role: "Staff Nurse",
-    company: "Gilberto O. Teodoro Memorial Hospital",
+    role: "UI/UX Web Developer",
+    company: "Getmilk",
     description:
-      "Working as a Staff Nurse in a government hospital, contributing to patient care and supporting the delivery of healthcare services. Committed to maintaining professionalism, patient safety, teamwork, and compassionate nursing practice.",
-    technologies: ["Current Role", "Patient Care", "Healthcare Services"],
+      "I build and manage custom WordPress websites, handle content updates and maintenance, and ensure responsive layouts and a smooth user experience across all devices.",
+    technologies: ["Wordpress", "HTML", "CSS", "PHP"],
     current: true,
   },
-    {
-    period: "August 2023 — August 2025",
-    role: "Student Nurse",
-    company: "Pangasinan Provincial Hospital, Region 1 Medical Center, Bayambang District Hospital",
+  {
+    period: "March 2026 — July 2026",
+    role: "Wordpress Web Developer",
+    company: "CS-PAC Global ",
     description:
-      "Assisted with nursing and operating room procedures as a scrub and circulating nurse, monitored vital signs and fluid intake and output, documented patient records, and developed nursing care plans.",
-    technologies: ["Nursing Procedures", "Patient Care", "Healthcare Services"],
+      "I built and manage the Amazing Morrow website using WordPress, handling website development, content updates, SEO optimization, and performance improvements while ensuring a responsive and user-friendly experience.",
+    technologies: ["Wordpress", "SEO", "Off-page SEO", "On-page SEO"],
     current: true,
   },
-  
+  {
+    period: "April 2024 — January 2026",
+    role: "UI/UX Web Developer",
+    company: "Getmilk",
+    description:
+      "I manage website design and content using WordPress, set up and configure WooCommerce for eCommerce sites, provide ongoing maintenance and updates, and design responsive layouts to ensure mobile compatibility.",
+    technologies: ["Wordpress", "HTML", "CSS", "PHP"],
+    current: true,
+  },
+  {
+    period: "May 2023 — July 2023",
+    role: "Front-end Developer",
+    company: "Money Tree Consumer Goods Trading",
+    description:
+      "I manage website appearance and ensure responsiveness, build websites using Laravel and WordPress, prepare website proposals for clients, provide technical support, and develop using HTML and CSS. I also update websites based on client requirements to introduce new features and content.",
+    technologies: ["Bootstrap", "HTML", "CSS", "Laravel", "GitHub"],
+    current: false,
+  },
   
 ];
 
 const Experience = () => {
   return (
-    <section id='experience' className='py-12 md:py-24" relative overflow-hidden'>
+    <section id='experience' className='py-32 relative overflow-hidden'>
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -35,12 +52,13 @@ const Experience = () => {
           <h2 className='text-4xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
             text-secondary-foreground'>
-            Caring for others, <span className='font-serif italic font-normal text-primary'>
-               Career Journey
+            Experience that <span className='font-serif italic font-normal text-white'>
+              speaks volume.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            My journey from nursing student to Registered Nurse and now Staff Nurse, driven by compassion, dedication, and a commitment to providing quality patient care while continuously learning and growing in the nursing profession.
+            A timeline of my professional growth, from curious beginner to
+            senior engineer leading teams and building products at scale.
           </p>
         </div>
 
@@ -64,7 +82,7 @@ const Experience = () => {
 
                 {/* Content */}
                 <div className={`pl-8 md:pl-0 ${idx % 2 === 0
-                      ? "md:pr-16 md:text-justify"
+                      ? "md:pr-16 md:text-right"
                       : "md:col-start-2 md:pl-16"
                   }`}>
                   <div className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}>

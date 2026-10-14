@@ -7,13 +7,13 @@ const FloatingContactButton = () => {
     const contact = [
   "BEGIN:VCARD",
   "VERSION:3.0",
-  "FN:Aleizza Grace Pablo",
-  "N:Pablo;Aleizza Grace;;;",
+  "FN:Ron Mamucod",
+  "N:Mamucod;Ron;;;",
   "TITLE:Web Developer & WordPress Specialist",
-  "TEL;TYPE=CELL:+639506133824",
-  "EMAIL;TYPE=INTERNET:aleizzapablo@gmail.com",
-  "URL:https://www.facebook.com/aleizza.pablo.2025",
-  "URL:https://www.instagram.com/assangyy/",
+  "TEL;TYPE=CELL:+639617867924",
+  "EMAIL;TYPE=INTERNET:mamucodron@gmail.com",
+  "URL:https://github.com/RonMamucod",
+  "URL:https://www.linkedin.com/in/ron-mamucod-150588282/",
   "END:VCARD",
 ].join("\r\n");
 
@@ -25,7 +25,7 @@ const FloatingContactButton = () => {
     const link = document.createElement("a");
 
     link.href = url;
-    link.download = "Aleizza-Grace-Pablo.vcf";
+    link.download = "Ron-Mamucod.vcf";
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -38,7 +38,7 @@ const FloatingContactButton = () => {
 <button
   type="button"
   onClick={saveContact}
-  aria-label="Save Aleizza Grace Pablo's contact"
+  aria-label="Save Ron Mamucod's contact"
   className="fixed bottom-4 left-4 right-4 z-50 group flex items-center justify-between gap-4 rounded-full border border-primary/40 bg-background/90 px-5 py-3 text-foreground shadow-lg shadow-primary/10 backdrop-blur-xl transition-all duration-300 hover:border-primary hover:shadow-primary/30 sm:bottom-6 sm:left-auto sm:right-6 sm:w-auto sm:min-w-[260px]"
 >
   {/* Contact Icon */}
