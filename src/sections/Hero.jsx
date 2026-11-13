@@ -71,7 +71,7 @@ const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                SShaping <span className="text-primary glow-text">digital</span>
+                Shaping <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
                 <br />
